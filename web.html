@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff; /* Light sky blue */
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        /* Navbar */
+        .navbar {
+            position:fixed;
+            width:100%;
+            top: 0;
+            justify-content:center;
+            display: flex;
+            justify-content: center;
+            background-color: #87ceeb;
+            padding: 15px 0;
+        }
+        .navbar button {
+            background-color: #5cacee;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            margin: 0 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s;
+        }
+        .navbar button:hover {
+            background-color: #4682b4;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            padding: 60px;
+            background-color: #87ceeb;
+            color: white;
+        }
+        .header h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        /* Main Content */
+        .content {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        h2 {
+            color: #5cacee;
+            text-align: center;
+            border-bottom: 2px solid #5cacee;
+            padding-bottom: 5px;
+            font-size: 1.8em;
+        }
+        p, li {
+            font-size: 1em;
+            line-height: 1.6;
+        }
+
+        /* Profile Image */
+        .profile-image {
+            display: block;
+            margin: 0 auto 20px auto;
+            width: 150px; /* Adjust as needed */
+            height: 150px; /* Adjust as needed */
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #87ceeb;
+        }
+
+        /* Table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            font-size: 1em;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+        th {
+            background-color: #87ceeb;
+            color: white;
+        }
+
+        /* Form */
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 0;
+        }
+        input[type="email"] {
+            padding: 10px;
+            width: 80%;
+            max-width: 300px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+        button[type="submit"] {
+            padding: 10px 20px;
+            background-color: #5cacee;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button[type="submit"]:hover {
+            background-color: #4682b4;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 2.5em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar with Links to Sections -->
+    <div class="navbar">
+        <button class="fas fa-home"; onclick="location.href='#home'">Home</button>
+        <button class="fas fa-user"; onclick="location.href='#about'">About</button>
+        <button class="fas fa-comments"; onclick="location.href='#contact'">Contact</button>
+    </div>
+
+    <!-- Header Section (Home) -->
+    <div id="home" class="header">
+        <h1>Welcome to My Resume</h1>
+    </div>
+
+    <!-- Content Section -->
+    <div class="content">
+
+        <!-- About Section -->
+        <h2 id="about">Student Details</h2>
+        
+        <!-- Profile Image -->
+        <img src="image.jpg" alt="Profile Image" class="profile-image">
+        
+        <p><b>Name:</b> Rakesh Naik S</p>
+        <p><b>Father:</b> Seena Naik</p>
+        <p><b>Mother:</b> Sumabai</p>
+        <p><b>D.O.B:</b> 13/01/2007</p>
+        <p><b>Address:</b> Padarahalli, Harisandra Post, Ramanagara (D), (T)</p>
+        <p><b>Qualification:</b> B.TECH</p>
+        <p><b>Sex:</b> Male</p>
+        <p><b>Religion:</b> Hindu</p>
+        <p><b>Nationality:</b> Indian</p>
+        <p><b>Languages Known:</b> Kannada, English</p>
+        <p><b>Experience:</b> None</p>
+        <p><b>Marital Status:</b> Unmarried</p>
+
+        <!-- Education Table -->
+        <h2>Educational Qualification</h2>
+        <table>
+            <tr>
+                <th>SL No</th>
+                <th>Course/Class</th>
+                <th>University/Board of Exam</th>
+                <th>Granted %</th>
+                <th>Year Passed</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>SSLC</td>
+                <td>State Board</td>
+                <td>98.72%</td>
+                <td>2022</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>PUC</td>
+                <td>Pre University Board</td>
+                <td>88%</td>
+                <td>2024</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>B.TECH</td>
+                <td>RV University</td>
+                <td>None</td>
+                <td>None</td>
+            </tr>
+        </table>
+
+        <h2>Skills and Certifications</h2>
+        <ul>
+            <li>Static Web Development</li>
+            <li>Programming in C</li>
+            <li>Other Programming Languages</li>
+        </ul>
+
+        <h2>Hobbies</h2>
+        <ul>
+            <li>Watching Movies</li>
+            <li>Listening to Music</li>
+            <li>Singing</li>
+            <li>Playing Video Games</li>
+        </ul><hr>
+           <!-- Email Input Form -->
+        <form>
+            <h2>Submit your resume</h2>
+            <label for="email"><b>Enter your email:</b></label>
+            <input type="email" id="email" name="email" placeholder="Your email address" required>
+            <button type="submit">Submit</button><hr>
+        </form>
+
+        
+        <h2 id="contact">Contact Details</h2>
+        <p class=" fas fa-comments"><b>Email:</b> <a href="mailto:naiksrakesh822@gmail.com-email@gmail.com?subject=Your%20Subject%20Here&body=Hello,%0D%0A">
+naiksrakesh822@gmail.com</a></p><br>
+        <p class="fas fa-phone"><b>Phone:</b> 6363016054</p><br>
+        <p class=" fas fa-message"><b>Instgram:</b><a href="https://www.instagram.com/_rakesh__naik?igsh=YTAwM3N1cGkzYnFt";>_rakesh__naik<img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo" style="width: 15px; height: 15px;"></a></p>
+
+
+        
+        
+    </div>
+
+</body>
+</html>
